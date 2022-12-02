@@ -1,7 +1,11 @@
+import { useEffect } from 'react'
+
 export default function SignIn() {
-  if (window.location.href.includes('gabrielromualdo.com')) {
-    window.open('https://github.com/xtrp/24Bank', '_self')
-  }
+  useEffect(() => {
+    if (window.location.href.includes('gabrielromualdo.com')) {
+      window.open('https://github.com/xtrp/24Bank', '_self')
+    }
+  }, [])
   return (
     <>
       <div className="flex min-h-screen flex-col justify-center py-12 sm:px-6 lg:px-8">
